@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace "com.senai.roblox"
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.senai.roblox"
         minSdk 21
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }
