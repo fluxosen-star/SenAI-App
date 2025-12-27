@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SenAI</string>
+    <string name="send_message">Enviar mensagem</string>
+    <string name="attach_file">Anexar arquivo</string>
+    <string name="message_hint">Digite sua mensagem...</string>
+    <string name="copy_code">Copiar</string>
+    <string name="obfuscate_code">Obfuscar</string>
+    <string name="clear_chat">Limpar conversa</string>
+    <string name="about">Sobre</string>
+    <string name="senai_title">SenAI - Roblox Luau Expert</string>
+</resources>

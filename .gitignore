@@ -1,0 +1,6 @@
+.gradle/
+build/
+gradle-7.6/
+*.zip
+*.jar
+
