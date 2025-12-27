@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace "com.senai.app"
+    namespace "com.senai.roblox"
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.senai.app"
+        applicationId "com.senai.roblox"
         minSdk 21
         targetSdk 33
         versionCode 1
