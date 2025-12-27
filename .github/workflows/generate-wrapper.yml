@@ -1,0 +1,29 @@
+name: Generate Gradle Wrapper Jar
+
+on:
+  workflow_dispatch:
+
+jobs:
+  wrapper:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Criar pasta wrapper
+        run: mkdir -p gradle/wrapper
+
+      - name: Baixar gradle-wrapper.jar oficial
+        run: |
+          curl -sSLo gradle-8.5-bin.zip https://services.gradle.org/distributions/gradle-8.5-bin.zip
+          unzip -o gradle-8.5-bin.zip 'gradle-8.5/lib/gradle-wrapper.jar' -d gradle/wrapper/
+
+      - name: Confirmar
+        run: ls -l gradle/wrapper/ 
