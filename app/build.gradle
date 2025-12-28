@@ -7,6 +7,10 @@ android {
     namespace "com.senai.roblox"
     compileSdk 34
 
+    buildFeatures {
+        viewBinding true
+    }
+
     defaultConfig {
         applicationId "com.senai.roblox"
         minSdk 21
